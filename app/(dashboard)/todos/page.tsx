@@ -1,7 +1,16 @@
-function TodosPage() {
+import TodoList from '@/app/components/TodoList'
+import db from '@/utils/db'
+
+async function getData() {
+  const todos = await db.todo.findMany()
+  return todos
+}
+
+async function TodosPage() {
+  const todos = await getData()
   return (
     <div>
-      <h1>Todos</h1>
+      <TodoList todos={todos} />
     </div>
   )
 }

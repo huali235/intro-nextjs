@@ -17,13 +17,13 @@ To run this project on your local machine, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone <https://github.com/huali235/intro-nextjs.git>
+git clone https://github.com/huali235/intro-nextjs.git
 ```
 
 2. Navigate into the project directory:
 
 ```bash
-cd <intro-nextjs>
+cd intro-nextjs
 ```
 
 3. Install the project dependencies (assuming you have node.js and npm installed):

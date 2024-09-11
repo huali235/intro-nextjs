@@ -18,3 +18,11 @@ export async function newTodo(formData) {
 
   revalidatePath('/todos')
 }
+
+export async function deleteTodo(id: string) {
+  await db.todo.delete({
+    where: { id },
+  })
+
+  revalidatePath('/todos')  
+}

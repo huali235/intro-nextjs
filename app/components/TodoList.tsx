@@ -1,6 +1,6 @@
 import Todo from './Todo'
 
-function TodoList({ todos }) {
+function TodoList({ todos }: { todos: any[] }) {
   return (
     <div>
       {todos.map((todo) => (
